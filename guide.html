@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SylTour — Travel Guide</title>
+    <meta name="description" content="Practical Sylhet travel guide with transport options, best seasons, safety tips, and packing advice.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site-shell.js" defer></script>
+    <style>
+        .guide-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .guide-section {
+            background: white;
+            border-radius: 24px;
+            padding: 30px 35px;
+            margin-bottom: 30px;
+            border: 1px solid #eef3f7;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+        }
+        .guide-section h2 {
+            color: #0a2e42;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .guide-section h2 i {
+            color: #fbbf24;
+            margin-right: 12px;
+        }
+        .guide-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .guide-section ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .guide-section ul li:last-child {
+            border-bottom: none;
+        }
+        .guide-section ul li i {
+            color: #fbbf24;
+            width: 24px;
+            font-size: 18px;
+        }
+        .guide-tip {
+            background: #f0f7fb;
+            border-left: 4px solid #fbbf24;
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 12px;
+        }
+        .guide-tip i {
+            color: #fbbf24;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .guide-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo"><i class="fas fa-leaf"></i> SylTour</div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="attractions.html"><i class="fas fa-location-dot"></i> Attractions</a>
+                <a href="guide.html" class="active"><i class="fas fa-map-signs"></i> Travel Guide</a>
+                <a href="food.html"><i class="fas fa-utensils"></i> Food</a>
+                <a href="stay.html"><i class="fas fa-hotel"></i> Stay</a>
+                <a href="login.html"><i class="fas fa-right-to-bracket"></i> Login</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-map-signs"></i> Travel Guide</h1>
+            <p>Everything you need to know before visiting Sylhet</p>
+        </div>
+    </section>
+
+    <div class="container guide-content">
+
+        <div class="guide-section">
+            <h2><i class="fas fa-plane"></i> How to Get There?</h2>
+            <ul>
+                <li><i class="fas fa-plane"></i> <strong>From Dhaka:</strong> Flight (Osmani Airport), Train (Upaban, Parabat, Joyantika), Bus (Shyamoli, Green Line, Saudia)</li>
+                <li><i class="fas fa-train"></i> <strong>From Chittagong:</strong> Train (Paharika, Udayan Express), Bus (Shyamoli, Saudia, Hanif)</li>
+                <li><i class="fas fa-bus"></i> <strong>Local Transport:</strong> CNG, Auto-rickshaw, and local buses are available for getting around.</li>
+            </ul>
+        </div>
+
+        <div class="guide-section">
+            <h2><i class="fas fa-calendar-alt"></i> Best Time to Visit</h2>
+            <ul>
+                <li><i class="fas fa-snowflake"></i> <strong>Winter (Nov–Feb):</strong> Pleasant weather, ideal for sightseeing.</li>
+                <li><i class="fas fa-cloud-rain"></i> <strong>Monsoon (Jun–Sep):</strong> Ratargul & Haor are at their best.</li>
+                <li><i class="fas fa-sun"></i> <strong>Summer (Mar–May):</strong> Hot but tea gardens are lush green.</li>
+            </ul>
+        </div>
+
+        <div class="guide-section">
+            <h2><i class="fas fa-umbrella-beach"></i> Travel Tips</h2>
+            <ul>
+                <li><i class="fas fa-money-bill"></i> Carry sufficient cash — many places don't accept digital payments.</li>
+                <li><i class="fas fa-life-ring"></i> Wear a life jacket when boating in Ratargul or Haor areas.</li>
+                <li><i class="fas fa-user-tie"></i> Hire a local guide for better experience.</li>
+                <li><i class="fas fa-trash"></i> Don't litter — keep the natural beauty clean.</li>
+                <li><i class="fas fa-moon"></i> Avoid wandering alone in remote areas at night.</li>
+            </ul>
+            <div class="guide-tip">
+                <i class="fas fa-lightbulb"></i> <strong>Pro Tip:</strong> Visit Jaflong early morning for the best view of the sunrise over the hills!
+            </div>
+        </div>
+
+        <div class="guide-section">
+            <h2><i class="fas fa-suitcase"></i> Packing Checklist</h2>
+            <ul>
+                <li><i class="fas fa-pills"></i> Essential medicines</li>
+                <li><i class="fas fa-camera"></i> Camera & power bank</li>
+                <li><i class="fas fa-shoe-prints"></i> Sneakers & light bag</li>
+                <li><i class="fas fa-umbrella"></i> Raincoat & umbrella (monsoon)</li>
+                <li><i class="fas fa-water"></i> Life jacket (for wetlands)</li>
+                <li><i class="fas fa-tint"></i> Sunscreen & insect repellent</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-leaf" style="color: #fbbf24;"></i> SylTour</h4>
+                    <p>Your companion to discover the beauty of Sylhet.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="attractions.html">Attractions</a>
+                    <a href="guide.html">Travel Guide</a>
+                    <a href="food.html">Food</a>
+                    <a href="stay.html">Stay</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <a href="attractions.html#jaflong">Jaflong</a>
+                    <a href="attractions.html#bichnakandi">Bichnakandi</a>
+                    <a href="attractions.html#ratargul">Ratargul</a>
+                    <a href="attractions.html#lalakhal">Lalakhal</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <div class="footer-social">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <p><i class="fas fa-envelope"></i> info@syltour.com</p>
+                </div>
+            </div>
+            <div class="footer-copy">&copy; 2026 SylTour — All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

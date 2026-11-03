@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SylTour — Create Account</title>
+    <meta name="description" content="Create a SylTour account as a traveler, guide, or business owner.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site-shell.js" defer></script>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a class="logo" href="index.html"><i class="fas fa-leaf"></i> SylTour</a>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="login.html"><i class="fas fa-right-to-bracket"></i> Login</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main class="auth-page auth-page--signup">
+        <aside class="auth-landscape auth-landscape--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Sunrise_at_Baikka_Bil%2C_Moulovibazar_%287174718272%29.jpg" alt="Sunrise over Baikka Beel wetland in Moulvibazar">
+            <div class="auth-landscape-copy">
+                <span>MAKE ROOM FOR WONDER</span>
+                <p>Discover quiet waters, open skies, and a fresh perspective.</p>
+            </div>
+        </aside>
+        <section class="auth-card" aria-labelledby="signup-title">
+            <a class="auth-brand" href="index.html"><i class="fas fa-leaf"></i> SylTour</a>
+            <span class="auth-eyebrow">JOIN OUR COMMUNITY OF EXPLORERS</span>
+            <h1 id="signup-title">Create your account</h1>
+            <p class="auth-subtitle">A little closer to your next great journey.</p>
+            <form class="auth-form" id="signupForm">
+                <label for="signupName">Full name</label>
+                <input id="signupName" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+                <label for="signupEmail">Email address</label>
+                <input id="signupEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <label for="signupRole">Sign up as</label>
+                <select id="signupRole" name="role" required>
+                    <option value="traveler">Traveler / ভ্রমণকারী</option>
+                    <option value="guide">Guide / গাইড</option>
+                    <option value="business">Hotel or Business Owner / ব্যবসা মালিক</option>
+                    <option value="admin">Admin / প্রশাসক</option>
+                </select>
+                <p class="role-help">Your role controls which features and dashboard you can access.</p>
+                <p class="role-notice" id="adminNotice">Admin accounts cannot be created publicly. An existing administrator must invite or approve this account.</p>
+                <label for="signupPassword">Password</label>
+                <div class="password-field">
+                    <input id="signupPassword" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="Create a strong password" required>
+                    <button class="password-toggle" type="button" data-password-toggle="signupPassword" aria-label="Show password" title="Show password"><i class="fas fa-eye"></i></button>
+                </div>
+                <div class="password-strength" aria-live="polite">
+                    <div class="strength-track"><span id="strengthBar"></span></div>
+                    <strong id="strengthLabel">Enter a password</strong>
+                </div>
+                <ul class="password-requirements" id="passwordRequirements">
+                    <li data-requirement="length">At least 8 characters</li>
+                    <li data-requirement="lowercase">A lowercase letter</li>
+                    <li data-requirement="uppercase">An uppercase letter</li>
+                    <li data-requirement="number">A number</li>
+                    <li data-requirement="symbol">A special character</li>
+                </ul>
+                <button class="btn-primary auth-submit" type="submit"><span>Create account</span><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                <p id="signupStatus" class="auth-status" role="status" aria-live="polite"></p>
+                <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+            </form>
+            <p class="auth-privacy-note"><i class="fas fa-shield-halved" aria-hidden="true"></i> Your information is protected and secure.</p>
+        </section>
+        <aside class="auth-landscape auth-landscape--right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Lawachara_Forest.jpg" alt="Misty green forest in Lawachara National Park">
+            <div class="auth-landscape-copy">
+                <span>EXPLORE AT YOUR OWN PACE</span>
+                <p>Find your next favourite place, one journey at a time.</p>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-leaf" style="color: #75c8ad;"></i> SylTour</h4>
+                    <p>Your companion to discover the beauty, nature, and culture of Sylhet.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a><a href="attractions.html">Attractions</a>
+                    <a href="guide.html">Travel Guide</a><a href="food.html">Food</a><a href="stay.html">Stay</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Destinations</h4>
+                    <a href="attractions.html#jaflong">Jaflong</a><a href="attractions.html#bichnakandi">Bichnakandi</a>
+                    <a href="attractions.html#ratargul">Ratargul</a><a href="attractions.html#lalakhal">Lalakhal</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@syltour.com</p>
+                </div>
+            </div>
+            <div class="footer-copy">&copy; 2026 SylTour — All rights reserved.<br><small>Nature photos: <a href="https://commons.wikimedia.org/wiki/File:Sunrise_at_Baikka_Bil,_Moulovibazar_(7174718272).jpg" target="_blank" rel="noopener noreferrer">Faisal Akram</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Lawachara_Forest.jpg" target="_blank" rel="noopener noreferrer">Abdulmominbd</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</small></div>
+        </div>
+    </footer>
+    <script src="js/auth.js"></script>
+</body>
+</html>

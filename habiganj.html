@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Habiganj District Attractions — SylTour</title>
+    <meta name="description" content="Explore Habiganj's forests, wetlands, heritage sites, and local culture with SylTour.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site-shell.js" defer></script>
+</head>
+<body class="sunamganj-page">
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo"><i class="fas fa-leaf"></i> SylTour</div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="attractions.html"><i class="fas fa-location-dot"></i> Attractions</a>
+                <a href="guide.html"><i class="fas fa-map-signs"></i> Travel Guide</a>
+                <a href="food.html"><i class="fas fa-utensils"></i> Food</a>
+                <a href="stay.html"><i class="fas fa-hotel"></i> Stay</a>
+                <a href="login.html"><i class="fas fa-right-to-bracket"></i> Login</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="district-welcome-banner" aria-labelledby="districtWelcome">
+            <div class="district-welcome-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Rema_Kalenga_Wildlife_Sanctuary.jpg" alt="Forest landscape in Rema-Kalenga Wildlife Sanctuary, Habiganj" fetchpriority="high">
+            </div>
+            <div class="district-welcome-copy">
+                <span lang="bn">স্বাগতম হবিগঞ্জে</span>
+                <h1 id="districtWelcome" lang="bn">চা-বাগান, হাওর ও বনাঞ্চলের জেলা</h1>
+            </div>
+        </section>
+
+        <section class="container district-content">
+            <header class="district-page-intro">
+                <h1>হবিগঞ্জ</h1>
+                <p lang="bn">
+                    হবিগঞ্জ জেলা চায়ের বাগান, হাওর ও বনাঞ্চলের জন্যে অতি পরিচিত। হযরত শাহজালাল (রঃ) এর অনুসারী সৈয়দ নাছির উদ্দিন (রঃ) এর পূণ্যস্মৃতি বিজড়িত এই জেলা খোয়াই, করাঙ্গী সুতাং, বিজনা, রত্না প্রভৃতি নদী বিধৌত প্রাচীন জনপদ। জেলার পূর্বে মৌলভীবাজার ও সিলেট জেলা এবং পশ্চিমে ব্রাহ্মনবাড়িয়া ও কিশোরগঞ্জ জেলা, উত্তরে সুনামগঞ্জ জেলা, দক্ষিনে ভারতের ত্রিপুরা রাজ্য। হবিগঞ্জ জেলার দর্শনীয় স্থানের মধ্যে উল্লেখযোগ্য হলো; কালেঙ্গা অভয়ারণ্য, রাবার বাগান, সাতছড়ি সংরক্ষিত বনাঞ্চল, রেমা কালেঙ্গা সংরক্ষিত বনাঞ্চল, বিতঙ্গল আখড়্‌ বিবিয়ানা গ্যাস ফিল্ড ইত্যাদি।
+                    <a class="district-map-link" href="https://www.google.com/maps/search/?api=1&query=Habiganj+District+Bangladesh" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-map-marked-alt"></i> মানচিত্র দেখুন
+                    </a>
+                </p>
+            </header>
+
+            <div class="district-list" id="habiganjGrid" aria-live="polite">
+                <p class="search-empty-state" role="status">Loading Habiganj attractions...</p>
+            </div>
+            <p class="district-load-status" id="districtLoadStatus" role="status" hidden></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-leaf" style="color: #fbbf24;"></i> SylTour</h4>
+                    <p>Your simple companion to discover the natural beauty, heritage, and culture of Sylhet.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="attractions.html">Attractions</a>
+                    <a href="guide.html">Travel Guide</a>
+                    <a href="food.html">Food</a>
+                    <a href="stay.html">Stay</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <a href="attractions.html#jaflong">Jaflong</a>
+                    <a href="attractions.html#bichnakandi">Bichnakandi</a>
+                    <a href="attractions.html#ratargul">Ratargul</a>
+                    <a href="attractions.html#lalakhal">Lalakhal</a>
+                    <a href="attractions.html#tanguar-haor">Tanguar Haor</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <div class="footer-social">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <p style="margin-top: 12px;"><i class="fas fa-envelope"></i> info@syltour.com</p>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 SylTour — All Rights Reserved. We believe in eco-friendly travel.
+                <br><small>Rema-Kalenga photo: <a href="https://commons.wikimedia.org/wiki/File:Rema_Kalenga_Wildlife_Sanctuary.jpg" target="_blank" rel="noopener noreferrer">Sanjida Showmi Shithi</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, via Wikimedia Commons.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/habiganj.js"></script>
+</body>
+</html>

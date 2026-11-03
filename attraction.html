@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Details — SylTour</title>
+    <meta name="description" content="Explore destination details, travel information, and visitor tips with SylTour.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site-shell.js" defer></script>
+</head>
+<body class="sunamganj-page">
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo"><i class="fas fa-leaf"></i> SylTour</div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="attractions.html"><i class="fas fa-location-dot"></i> Attractions</a>
+                <a href="guide.html"><i class="fas fa-map-signs"></i> Travel Guide</a>
+                <a href="food.html"><i class="fas fa-utensils"></i> Food</a>
+                <a href="stay.html"><i class="fas fa-hotel"></i> Stay</a>
+                <a href="login.html"><i class="fas fa-right-to-bracket"></i> Login</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main class="container attraction-detail-page">
+        <a class="attraction-back-link" id="attractionBackLink" href="attractions.html">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to attractions
+        </a>
+        <p class="district-load-status" id="attractionDetailStatus" role="status">Loading attraction details...</p>
+        <article class="attraction-detail-card" id="attractionDetailCard" hidden>
+            <img class="attraction-detail-image" id="attractionDetailImage" alt="">
+            <div class="attraction-detail-content">
+                <p class="attraction-detail-location" id="attractionDetailLocation"></p>
+                <h1 id="attractionDetailName"></h1>
+                <p class="attraction-detail-summary" id="attractionDetailSummary"></p>
+                <section class="attraction-full-details" aria-labelledby="fullDetailsHeading">
+                    <h2 id="fullDetailsHeading">About this place</h2>
+                    <div id="attractionFullDetails"></div>
+                </section>
+                <a class="district-map-link attraction-map-link" id="attractionMapLink" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i> Open location in Maps
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-leaf" style="color: #fbbf24;"></i> SylTour</h4>
+                    <p>Your simple companion to discover the natural beauty, heritage, and culture of Sylhet.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="attractions.html">Attractions</a>
+                    <a href="guide.html">Travel Guide</a>
+                    <a href="food.html">Food</a>
+                    <a href="stay.html">Stay</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <a href="sylhet.html">Sylhet</a>
+                    <a href="sunamganj.html">Sunamganj</a>
+                    <a href="habiganj.html">Habiganj</a>
+                    <a href="moulvibazar.html">Moulvibazar</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <p><i class="fas fa-envelope"></i> info@syltour.com</p>
+                </div>
+            </div>
+            <div class="footer-copy">&copy; 2026 SylTour — All Rights Reserved. We believe in eco-friendly travel.</div>
+        </div>
+    </footer>
+
+    <script src="js/attraction.js"></script>
+</body>
+</html>

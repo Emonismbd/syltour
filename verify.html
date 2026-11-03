@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SylTour — Verify Your Email</title>
+    <meta name="description" content="Verify your email address to complete your SylTour account setup.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site-shell.js" defer></script>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a class="logo" href="index.html"><i class="fas fa-leaf"></i> SylTour</a>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="login.html"><i class="fas fa-right-to-bracket"></i> Login</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main class="auth-page auth-page--verify">
+        <aside class="auth-landscape auth-landscape--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Tea_Gardens_of_Sreemangal_01.jpg" alt="Rolling tea gardens in Sreemangal">
+            <div class="auth-landscape-copy">
+                <span>YOUR NEXT JOURNEY BEGINS HERE</span>
+                <p>A little closer to the places you have yet to discover.</p>
+            </div>
+        </aside>
+        <section class="auth-card verify-card" aria-labelledby="verify-title">
+            <a class="auth-brand" href="index.html"><i class="fas fa-leaf"></i> SylTour</a>
+            <div class="verify-emblem" aria-hidden="true"><i class="fas fa-envelope-open-text"></i></div>
+            <span class="auth-eyebrow">ONE QUICK STEP TO GET STARTED</span>
+            <h1 id="verify-title">Verify your email</h1>
+            <p class="auth-subtitle">We sent a 6-digit code to your inbox. Enter it below to finish setting up your account.</p>
+            <form class="auth-form verify-form" id="otpForm">
+                <label for="otpEmail">Email address</label>
+                <input id="otpEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <label for="otpCode">6-digit verification code</label>
+                <input class="verify-code-input" id="otpCode" name="otp" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="••••••" aria-describedby="otpHint" required>
+                <p id="otpHint" class="verify-hint"><i class="fas fa-clock" aria-hidden="true"></i> Your code is valid for 10 minutes.</p>
+                <button class="btn-primary auth-submit" type="submit">
+                    <span>Verify email</span><i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </button>
+                <p id="verifyStatus" class="auth-status" role="status" aria-live="polite"></p>
+                <div class="verify-success" id="verifySuccess" role="status" aria-live="polite" hidden>
+                    <span class="verify-success-icon"><i class="fas fa-check" aria-hidden="true"></i></span>
+                    <strong>Email verified</strong>
+                    <span>Taking you to login…</span>
+                </div>
+                <p class="auth-switch">Already verified? <a href="login.html">Go to login</a></p>
+            </form>
+            <p class="auth-privacy-note"><i class="fas fa-shield-halved" aria-hidden="true"></i> Your information is protected and secure.</p>
+        </section>
+        <aside class="auth-landscape auth-landscape--right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Lawachara_Forest.jpg" alt="Misty green forest in Lawachara National Park">
+            <div class="auth-landscape-copy">
+                <span>WELCOME TO SYLTOUR</span>
+                <p>Discover green trails, quiet waters, and unforgettable journeys.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-leaf" style="color: #75c8ad;"></i> SylTour</h4>
+                    <p>Your companion to discover the beauty, nature, and culture of Sylhet.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a><a href="attractions.html">Attractions</a>
+                    <a href="guide.html">Travel Guide</a><a href="food.html">Food</a><a href="stay.html">Stay</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Destinations</h4>
+                    <a href="attractions.html#jaflong">Jaflong</a><a href="attractions.html#bichnakandi">Bichnakandi</a>
+                    <a href="attractions.html#ratargul">Ratargul</a><a href="attractions.html#lalakhal">Lalakhal</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@syltour.com</p>
+                </div>
+            </div>
+            <div class="footer-copy">&copy; 2026 SylTour — All rights reserved.<br><small>Nature photos: <a href="https://commons.wikimedia.org/wiki/File:Tea_Gardens_of_Sreemangal_01.jpg" target="_blank" rel="noopener noreferrer">Radman Siddiki</a> / <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Lawachara_Forest.jpg" target="_blank" rel="noopener noreferrer">Abdulmominbd</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</small></div>
+        </div>
+    </footer>
+    <script src="js/verify.js"></script>
+</body>
+</html>

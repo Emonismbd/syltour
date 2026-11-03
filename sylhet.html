@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sylhet District Attractions — SylTour</title>
+    <meta name="description" content="Explore Sylhet's hills, rivers, tea country, wetlands, and historic landmarks with SylTour.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/site-shell.js" defer></script>
+</head>
+<body class="sunamganj-page">
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo"><i class="fas fa-leaf"></i> SylTour</div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="attractions.html"><i class="fas fa-location-dot"></i> Attractions</a>
+                <a href="guide.html"><i class="fas fa-map-signs"></i> Travel Guide</a>
+                <a href="food.html"><i class="fas fa-utensils"></i> Food</a>
+                <a href="stay.html"><i class="fas fa-hotel"></i> Stay</a>
+                <a href="login.html"><i class="fas fa-right-to-bracket"></i> Login</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="district-welcome-banner" aria-labelledby="districtWelcome">
+            <div class="district-welcome-image sylhet-welcome-image">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/77/Keane_Bridge_and_Ali_Amjad%27s_Clock%2C_Sylhet.jpg"
+                    alt="Keane Bridge and Ali Amjad's Clock beside the Surma River in Sylhet"
+                    fetchpriority="high">
+            </div>
+            <div class="district-welcome-copy">
+                <span lang="bn">স্বাগতম সিলেটে</span>
+                <h1 id="districtWelcome" lang="bn">আধ্যাত্মিকতার নগরী</h1>
+                <p lang="bn">মরমি সাধকদের স্মৃতি, সুফি দর্শনের ঐতিহ্য আর প্রকৃতির অপার সৌন্দর্যে ঘেরা এক জনপদ।</p>
+            </div>
+        </section>
+
+        <section class="container district-content">
+            <header class="district-page-intro">
+                <h1>সিলেট</h1>
+                <p lang="bn">
+                    অপরূপ প্রাকৃতিক সৌন্দর্যে ভরপুর দুটি পাতা একটি কুঁড়ির দেশ সিলেট। বাংলাদেশের উত্তর-পূর্বে অবস্থিত এই প্রাচীন জনপদ বনজ, খনিজ ও মৎস্য সম্পদে ভরপুর এবং প্রাকৃতিক সৌন্দর্য মণ্ডিত। প্রাকৃতিক সৌন্দর্য ছাড়াও সিলেটের রয়েছে প্রসিদ্ধ ইতিহাস। সিলেটে বসবাসকারী বিভিন্ন আদিবাসীদের রয়েছে ভিন্ন ভিন্ন ভাষা ও সংস্কৃতি। চা বাগান, জাফলং, রাতারগুল জলাবন, হাকালুকি হাওর, লালাখাল, ভোলাগঞ্জ, বিছনাকান্দি, তামাবিল, পাহাড়, ঝর্ণা—সব মিলিয়ে নানা বৈচিত্র্যের সম্ভার এই সিলেট দেশের অন্যতম পর্যটন নগরী।
+                    <a class="district-map-link" href="https://www.google.com/maps/search/?api=1&query=Sylhet+District+Bangladesh" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-map-marked-alt"></i> মানচিত্র দেখুন
+                    </a>
+                </p>
+            </header>
+
+            <div class="district-list" id="sylhetGrid" aria-live="polite">
+                <p class="search-empty-state" role="status">Loading Sylhet attractions...</p>
+            </div>
+            <p class="district-load-status" id="districtLoadStatus" role="status" hidden></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-leaf" style="color: #fbbf24;"></i> SylTour</h4>
+                    <p>Your simple companion to discover the natural beauty, heritage, and culture of Sylhet.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="attractions.html">Attractions</a>
+                    <a href="guide.html">Travel Guide</a>
+                    <a href="food.html">Food</a>
+                    <a href="stay.html">Stay</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <a href="attractions.html#jaflong">Jaflong</a>
+                    <a href="attractions.html#bichnakandi">Bichnakandi</a>
+                    <a href="attractions.html#ratargul">Ratargul</a>
+                    <a href="attractions.html#lalakhal">Lalakhal</a>
+                    <a href="attractions.html#tanguar-haor">Tanguar Haor</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <div class="footer-social">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <p style="margin-top: 12px;"><i class="fas fa-envelope"></i> info@syltour.com</p>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 SylTour — All Rights Reserved. We believe in eco-friendly travel.
+                <br><small>Destination images sourced from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</small>
+                <br><small class="district-image-attribution">Sylhet city photo: <a href="https://commons.wikimedia.org/wiki/File:Keane_Bridge_and_Ali_Amjad%27s_Clock,_Sylhet.jpg" target="_blank" rel="noopener noreferrer">Shafqat Rabbi</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/sylhet.js"></script>
+</body>
+</html>
